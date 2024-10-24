@@ -100,7 +100,22 @@
     border-radius: 8px;
 }
 
-.card iframe {
+.iframe-container {
+    position: relative;
+    width: 100%; /* Sesuaikan dengan card */
+    padding-bottom: 56.25%; /* Rasio 16:9 untuk video */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px; /* Agar sudut iframe menyesuaikan dengan card */
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
     border-radius: 8px;
 }
 
